@@ -1,0 +1,42 @@
+{
+  "title": "A306559 - self-describing English-words sequence identified with its morphic fixed point (Lean 4)",
+  "description": "theorem A306559 (proved, kernel-pure): existence and uniqueness of the self-describing sequence of OEIS A306559 - the rule 'lengths of runs of consonants between successive vowels of the concatenated English names is the sequence itself', seed 1,2,3 over the finite lexicon {ZERO,ONE,TWO,THREE} (vowels {E,O}). Proved: the candidate aStar = [1,2,3] concatenated with the morphic word 0.W(0).W^2(0).W^3(0)... (W : 0 -> 11, 1 -> 01, defined as an MSB-to-LSB fold on the bits of n+1, its morphism equations proved as theorems) satisfies the describing equation for every index k (EX, by blockwise vowel tracking: each morphic name contributes exactly its W-image pair of runs), and every sequence sharing the seed and the equation equals aStar (UN, by strong induction on vowel positions). This machine-verifies the on-entry conjectured morphic form; Neder's equivalence with the tail of A039982 (informal OEIS note, 2019) is cited as prior work, not re-proved. Documented open, not claimed: the density-2/3 conjecture and the A039982 coincidence as properties of the entry. Trust base: standard axioms only [propext, Classical.choice, Quot.sound] audited on all 132 declarations; zero sorry, zero native_decide; 5 modules (proof, frozen spec, spec check, anti-vacuity check, axioms report).",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Gaudin, Frederic"
+    }
+  ],
+  "license": {
+    "id": "Apache-2.0"
+  },
+  "keywords": [
+    "OEIS",
+    "self-describing sequence",
+    "morphic word",
+    "fixed point",
+    "combinatorics on words",
+    "English words",
+    "vowels consonants",
+    "Lean 4",
+    "mathlib",
+    "formal proof",
+    "theorem prover",
+    "A306559",
+    "A039982"
+  ],
+  "version": "1.0.0",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23879088",
+      "relation": "references",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    }
+  ],
+  "custom": {
+    "code:theoremStatus": "theorem (existence + uniqueness of the self-describing fixed point; density 2/3 and A039982 coincidence documented open)",
+    "code:leanToolchain": "leanprover/lean4:v4.35.0",
+    "code:mathlibVersion": "v4.35.0"
+  }
+}
