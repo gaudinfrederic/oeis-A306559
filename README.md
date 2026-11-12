@@ -133,7 +133,7 @@ Expected `#print axioms` output on the capstone
 
 ## Provenance
 
-Developed under the DemosMathNT program (multi-session
+Developed under the present formalization program (multi-session
 OEIS conjecture formalization effort). The OEIS statement
 was submitted verbatim to independent oracles before
 formalization (unanimous fidelity verdicts on the spec).
