@@ -1,6 +1,6 @@
 # A306559 - self-describing English-words sequence identified with its morphic fixed point, in Lean 4
 
-[![CI](https://github.com/USERNAME/a306559-lean/actions/workflows/ci.yml/badge.svg)](https://github.com/USERNAME/a306559-lean/actions/workflows/ci.yml)
+[![CI](https://github.com/gaudinfrederic/oeis-A306559/actions/workflows/ci.yml/badge.svg)](https://github.com/gaudinfrederic/oeis-A306559/actions/workflows/ci.yml)
 
 Machine-checked formalization of
 [OEIS A306559](https://oeis.org/A306559): *"A self-describing
@@ -135,17 +135,16 @@ Expected `#print axioms` output on the capstone
 
 Developed under the present formalization program (multi-session
 OEIS conjecture formalization effort). The OEIS statement
-was submitted verbatim to independent oracles before
-formalization (unanimous fidelity verdicts on the spec).
-An adversarial oracle pass on the finished theorem was
-not unanimous (two `FAUX` verdicts out of six); every
-objection was investigated point by point and resolved
-against the formal artifact - mistranslations of the
-prose prompt or factually false claims (documented in
-`VERIFICATIONS/e4-investigation.md` of the source
-package). Oracle verdicts are advisory only: correctness
-is established by Lean. The morphic-form conjecture is
-stated on the OEIS entry; Neder's equivalence with the
-tail of A039982 is cited, not re-proved. No first-proof
-or new-result claim is made beyond the machine-checked
-verification itself.
+was transcribed verbatim and cross-checked by independent
+AI-assisted reviews before formalization (unanimous fidelity
+agreement on the spec). An adversarial review pass on the
+finished theorem was not unanimous; every objection was
+investigated point by point and resolved against the formal
+artifact - mistranslations of the informal prose or
+factually false claims (documented in the companion
+verification archive deposited on the Zenodo record).
+Reviews are advisory only: correctness is established by
+Lean. The morphic-form conjecture is stated on the OEIS
+entry; Neder's equivalence with the tail of A039982 is
+cited, not re-proved. No first-proof or new-result claim
+is made beyond the machine-checked verification itself.
